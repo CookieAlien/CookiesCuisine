@@ -10,7 +10,9 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CookiesCuisine.MODID);
-    public static final RegistryObject<Item> GREEN_APPLE = ITEMS.register("green_apple", ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GREEN_APPLE = ITEMS.register("green_apple", ()-> new Item(new Item.Properties().food(ModFoods.GREEN_APPLE)));
+    public static final RegistryObject<Item> SWEET_COOKIE = ITEMS.register("sweet_cookie", ()-> new Item(new Item.Properties().food(ModFoods.SWEET_COOKIE)));
+    public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", ()-> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

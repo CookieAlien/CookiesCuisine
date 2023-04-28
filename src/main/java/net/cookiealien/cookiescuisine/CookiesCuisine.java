@@ -1,7 +1,9 @@
 package net.cookiealien.cookiescuisine;
 
 import com.mojang.logging.LogUtils;
+import net.cookiealien.cookiescuisine.item.ModCreativeModeTabs;
 import net.cookiealien.cookiescuisine.item.ModItems;
+import net.cookiealien.cookiescuisine.loot.ModLootModifiers;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -49,6 +51,8 @@ public class CookiesCuisine
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+        ModLootModifiers.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -59,6 +63,13 @@ public class CookiesCuisine
     {
         if(event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.GREEN_APPLE);
+            event.accept(ModItems.SWEET_COOKIE);
+            event.accept(ModItems.FLOUR);
+            }
+        if(event.getTab() == ModCreativeModeTabs.COOKIESCUISINE_TAB){
+            event.accept(ModItems.GREEN_APPLE);
+            event.accept(ModItems.SWEET_COOKIE);
+            event.accept(ModItems.FLOUR);
         }
     }
 

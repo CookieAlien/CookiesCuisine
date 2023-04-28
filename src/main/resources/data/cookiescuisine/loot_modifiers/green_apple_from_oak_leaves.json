@@ -1,0 +1,21 @@
+{
+  "type": "cookiescuisine:add_item",
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:oak_leaves"
+    },
+    {
+      "chances": [
+        0.005,
+        0.0055555557,
+        0.00625,
+        0.008333334,
+        0.025
+      ],
+      "condition": "minecraft:table_bonus",
+      "enchantment": "minecraft:fortune"
+    }
+  ],
+  "item": "cookiescuisine:green_apple"
+}
