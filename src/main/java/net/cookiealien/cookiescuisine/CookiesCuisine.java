@@ -66,10 +66,14 @@ public class CookiesCuisine
             event.accept(ModItems.SWEET_COOKIE);
             event.accept(ModItems.FLOUR);
             }
+        if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.MORTAR);
+        }
         if(event.getTab() == ModCreativeModeTabs.COOKIESCUISINE_TAB){
             event.accept(ModItems.GREEN_APPLE);
             event.accept(ModItems.SWEET_COOKIE);
             event.accept(ModItems.FLOUR);
+            event.accept(ModItems.MORTAR);
         }
     }
 

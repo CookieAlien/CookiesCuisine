@@ -3,17 +3,17 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "minecraft:wheat"
+      "item": "cookiescuisine:flour"
     },
     "X": {
-      "item": "cookiescuisine:flour"
+      "item": "minecraft:sugar"
     }
   },
   "pattern": [
     "#X#"
   ],
   "result": {
-    "count": 8,
+    "count": 4,
     "item": "cookiescuisine:sweet_cookie"
   },
   "show_notification": true

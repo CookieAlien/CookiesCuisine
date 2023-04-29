@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "cookiescuisine:mortar"
+    }
+  ],
+  "result": {
+    "item": "cookiescuisine:flour",
+    "count": 2
+  }
+}
