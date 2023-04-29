@@ -68,12 +68,14 @@ public class CookiesCuisine
             }
         if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.MORTAR);
+            event.accept(ModItems.PAPER_CUP);
         }
         if(event.getTab() == ModCreativeModeTabs.COOKIESCUISINE_TAB){
             event.accept(ModItems.GREEN_APPLE);
             event.accept(ModItems.SWEET_COOKIE);
             event.accept(ModItems.FLOUR);
             event.accept(ModItems.MORTAR);
+            event.accept(ModItems.PAPER_CUP);
         }
     }
 
