@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " s ",
+    "sps"
+  ],
+  "key": {
+    "s": {
+      "tag": "forge:stone"
+    },
+    "p": {
+      "item": "minecraft:stone_pressure_plate"
+    }
+  },
+  "result": {
+    "item": "cookiescuisine:juicer",
+    "count": 1
+  }
+}

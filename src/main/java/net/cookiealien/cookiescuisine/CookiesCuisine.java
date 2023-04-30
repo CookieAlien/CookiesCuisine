@@ -68,6 +68,7 @@ public class CookiesCuisine
             }
         if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.MORTAR);
+            event.accept(ModItems.JUICER);
             event.accept(ModItems.PAPER_CUP);
         }
         if(event.getTab() == ModCreativeModeTabs.COOKIESCUISINE_TAB){
@@ -75,6 +76,7 @@ public class CookiesCuisine
             event.accept(ModItems.SWEET_COOKIE);
             event.accept(ModItems.FLOUR);
             event.accept(ModItems.MORTAR);
+            event.accept(ModItems.JUICER);
             event.accept(ModItems.PAPER_CUP);
         }
     }
