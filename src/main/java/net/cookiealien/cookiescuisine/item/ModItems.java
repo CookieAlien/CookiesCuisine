@@ -10,6 +10,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, CookiesCuisine.MODID);
     public static final RegistryObject<Item> GREEN_APPLE = ITEMS.register("green_apple", ()-> new Item(new Item.Properties().food(ModFoods.GREEN_APPLE)));
     public static final RegistryObject<Item> SWEET_COOKIE = ITEMS.register("sweet_cookie", ()-> new Item(new Item.Properties().food(ModFoods.SWEET_COOKIE)));
+    public static final RegistryObject<Item> APPLE_JUICE = ITEMS.register("apple_juice", ()-> new JuiceCupItem(new Item.Properties().food(ModFoods.APPLE_JUICE)));
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PAPER_CUP = ITEMS.register("paper_cup", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MORTAR = ITEMS.register("mortar", ()-> new ReusableItems(new Item.Properties().stacksTo(1)));

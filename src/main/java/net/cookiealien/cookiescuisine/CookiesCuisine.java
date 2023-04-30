@@ -63,6 +63,7 @@ public class CookiesCuisine
     {
         if(event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.GREEN_APPLE);
+            event.accept(ModItems.APPLE_JUICE);
             event.accept(ModItems.SWEET_COOKIE);
             event.accept(ModItems.FLOUR);
             }
@@ -74,6 +75,7 @@ public class CookiesCuisine
         if(event.getTab() == ModCreativeModeTabs.COOKIESCUISINE_TAB){
             event.accept(ModItems.GREEN_APPLE);
             event.accept(ModItems.SWEET_COOKIE);
+            event.accept(ModItems.APPLE_JUICE);
             event.accept(ModItems.FLOUR);
             event.accept(ModItems.MORTAR);
             event.accept(ModItems.JUICER);
