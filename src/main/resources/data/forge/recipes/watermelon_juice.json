@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cookiescuisine:juicer"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "cookiescuisine:paper_cup"
+    }
+  ],
+  "result": {
+    "item": "cookiescuisine:watermelon_juice",
+    "count": 1
+  }
+}

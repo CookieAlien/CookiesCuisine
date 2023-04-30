@@ -26,7 +26,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.slf4j.Logger;
+
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CookiesCuisine.MODID)
@@ -34,8 +34,6 @@ public class CookiesCuisine
 {
     // Define mod id in a common place for everything to reference
     public static final String MODID = "cookiescuisine";
-    // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
 
     public CookiesCuisine()
     {
@@ -64,6 +62,10 @@ public class CookiesCuisine
         if(event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.GREEN_APPLE);
             event.accept(ModItems.APPLE_JUICE);
+            event.accept(ModItems.CARROT_JUICE);
+            event.accept(ModItems.GREEN_APPLE_JUICE);
+            event.accept(ModItems.SWEET_BERRY_JUICE);
+            event.accept(ModItems.WATERMELON_JUICE);
             event.accept(ModItems.SWEET_COOKIE);
             event.accept(ModItems.FLOUR);
             }
@@ -76,6 +78,10 @@ public class CookiesCuisine
             event.accept(ModItems.GREEN_APPLE);
             event.accept(ModItems.SWEET_COOKIE);
             event.accept(ModItems.APPLE_JUICE);
+            event.accept(ModItems.CARROT_JUICE);
+            event.accept(ModItems.GREEN_APPLE_JUICE);
+            event.accept(ModItems.SWEET_BERRY_JUICE);
+            event.accept(ModItems.WATERMELON_JUICE);
             event.accept(ModItems.FLOUR);
             event.accept(ModItems.MORTAR);
             event.accept(ModItems.JUICER);
