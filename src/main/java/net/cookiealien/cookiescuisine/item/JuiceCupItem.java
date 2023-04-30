@@ -18,10 +18,10 @@ import javax.annotation.ParametersAreNonnullByDefault;
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
 public class JuiceCupItem extends Item {
-    public JuiceCupItem(Properties p_41383_) {
-        super(p_41383_);
+    public JuiceCupItem(Properties properties) {
+        super(properties);
     }
-    private static final int DRINK_DURATION = 20;
+    private static final int DRINK_DURATION = 30;
 
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
         super.finishUsingItem(stack, level, entity);
@@ -45,11 +45,11 @@ public class JuiceCupItem extends Item {
         }
     }
 
-    public int getUseDuration(ItemStack p_41360_) {
+    public int getUseDuration(ItemStack stack) {
         return DRINK_DURATION;
     }
 
-    public UseAnim getUseAnimation(ItemStack p_41358_) {
+    public UseAnim getUseAnimation(ItemStack stack) {
         return UseAnim.DRINK;
     }
 

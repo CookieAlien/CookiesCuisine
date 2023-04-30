@@ -68,6 +68,7 @@ public class CookiesCuisine
             event.accept(ModItems.WATERMELON_JUICE);
             event.accept(ModItems.SWEET_COOKIE);
             event.accept(ModItems.FLOUR);
+            event.accept(ModItems.DOUGH);
             }
         if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.MORTAR);
@@ -83,6 +84,7 @@ public class CookiesCuisine
             event.accept(ModItems.SWEET_BERRY_JUICE);
             event.accept(ModItems.WATERMELON_JUICE);
             event.accept(ModItems.FLOUR);
+            event.accept(ModItems.DOUGH);
             event.accept(ModItems.MORTAR);
             event.accept(ModItems.JUICER);
             event.accept(ModItems.PAPER_CUP);

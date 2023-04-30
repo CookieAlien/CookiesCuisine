@@ -4,8 +4,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 public class ReusableItems extends Item {
-    public ReusableItems(Properties p_41383_) {
-        super(p_41383_);
+    public ReusableItems(Properties properties) {
+        super(properties);
     }
     @Override
     public boolean hasCraftingRemainingItem(ItemStack stack) {

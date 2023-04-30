@@ -16,6 +16,7 @@ public class ModItems {
     public static final RegistryObject<Item> SWEET_BERRY_JUICE = ITEMS.register("sweet_berry_juice", ()-> new JuiceCupItem(new Item.Properties().food(ModFoods.SWEET_BERRY_JUICE)));
     public static final RegistryObject<Item> WATERMELON_JUICE = ITEMS.register("watermelon_juice", ()-> new JuiceCupItem(new Item.Properties().food(ModFoods.WATERMELON_JUICE)));
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DOUGH = ITEMS.register("dough", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PAPER_CUP = ITEMS.register("paper_cup", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MORTAR = ITEMS.register("mortar", ()-> new ReusableItems(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> JUICER = ITEMS.register("juicer", ()-> new ReusableItems(new Item.Properties().stacksTo(1)));
