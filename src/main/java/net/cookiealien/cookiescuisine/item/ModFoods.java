@@ -11,4 +11,5 @@ public class ModFoods {
     public static final FoodProperties SWEET_BERRY_JUICE = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.4F).build();
     public static final FoodProperties WATERMELON_JUICE = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.4F).build();
     public static final FoodProperties BOILED_EGG = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.3F).build();
+    public static final FoodProperties CHICKEN_CUTLET = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).meat().build();
 }

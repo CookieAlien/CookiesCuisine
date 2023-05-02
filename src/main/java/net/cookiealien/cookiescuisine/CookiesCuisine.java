@@ -5,10 +5,7 @@ import net.cookiealien.cookiescuisine.item.ModCreativeModeTabs;
 import net.cookiealien.cookiescuisine.item.ModItems;
 import net.cookiealien.cookiescuisine.loot.ModLootModifiers;
 import net.minecraft.client.Minecraft;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -70,6 +67,8 @@ public class CookiesCuisine
             event.accept(ModItems.FLOUR);
             event.accept(ModItems.DOUGH);
             event.accept(ModItems.BOILED_EGG);
+            event.accept(ModItems.RAW_CHICKEN_CUTLET);
+            event.accept(ModItems.CHICKEN_CUTLET);
             }
         if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.MORTAR);
@@ -77,19 +76,9 @@ public class CookiesCuisine
             event.accept(ModItems.PAPER_CUP);
         }
         if(event.getTab() == ModCreativeModeTabs.COOKIESCUISINE_TAB){
-            event.accept(ModItems.GREEN_APPLE);
-            event.accept(ModItems.SWEET_COOKIE);
-            event.accept(ModItems.APPLE_JUICE);
-            event.accept(ModItems.CARROT_JUICE);
-            event.accept(ModItems.GREEN_APPLE_JUICE);
-            event.accept(ModItems.SWEET_BERRY_JUICE);
-            event.accept(ModItems.WATERMELON_JUICE);
-            event.accept(ModItems.FLOUR);
-            event.accept(ModItems.DOUGH);
-            event.accept(ModItems.MORTAR);
-            event.accept(ModItems.JUICER);
-            event.accept(ModItems.PAPER_CUP);
-            event.accept(ModItems.BOILED_EGG);
+            for (RegistryObject<Item> value : ModItems.ITEMS.getEntries()) {
+                event.accept(value.get());
+            }
         }
     }
 
