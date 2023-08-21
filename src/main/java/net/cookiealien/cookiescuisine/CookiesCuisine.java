@@ -1,27 +1,19 @@
 package net.cookiealien.cookiescuisine;
 
-import com.mojang.logging.LogUtils;
 import net.cookiealien.cookiescuisine.item.ModCreativeModeTabs;
 import net.cookiealien.cookiescuisine.item.ModItems;
 import net.cookiealien.cookiescuisine.loot.ModLootModifiers;
-import net.minecraft.client.Minecraft;
-import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 
@@ -35,7 +27,7 @@ public class CookiesCuisine
     public CookiesCuisine()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
@@ -54,9 +46,9 @@ public class CookiesCuisine
     {
     }
 
-    private void addCreative(CreativeModeTabEvent.BuildContents event)
+    private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS){
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.GREEN_APPLE);
             event.accept(ModItems.APPLE_JUICE);
             event.accept(ModItems.CARROT_JUICE);
@@ -70,12 +62,12 @@ public class CookiesCuisine
             event.accept(ModItems.RAW_CHICKEN_CUTLET);
             event.accept(ModItems.CHICKEN_CUTLET);
             }
-        if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.MORTAR);
             event.accept(ModItems.JUICER);
             event.accept(ModItems.PAPER_CUP);
         }
-        if(event.getTab() == ModCreativeModeTabs.COOKIESCUISINE_TAB){
+        if(event.getTab() == ModCreativeModeTabs.COOKIESCUISINE_TAB.get()){
             for (RegistryObject<Item> value : ModItems.ITEMS.getEntries()) {
                 event.accept(value.get());
             }
