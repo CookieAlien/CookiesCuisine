@@ -1,5 +1,8 @@
 package net.cookiealien.cookiescuisine.item;
 import net.cookiealien.cookiescuisine.CookiesCuisine;
+import net.cookiealien.cookiescuisine.item.custom.JuiceCupItem;
+import net.cookiealien.cookiescuisine.item.custom.ModFoods;
+import net.cookiealien.cookiescuisine.item.custom.ReusableItems;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

@@ -1,5 +1,6 @@
-package net.cookiealien.cookiescuisine.item;
+package net.cookiealien.cookiescuisine.item.custom;
 
+import net.cookiealien.cookiescuisine.item.ModItems;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;

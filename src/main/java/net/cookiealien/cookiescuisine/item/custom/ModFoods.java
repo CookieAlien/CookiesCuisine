@@ -1,4 +1,4 @@
-package net.cookiealien.cookiescuisine.item;
+package net.cookiealien.cookiescuisine.item.custom;
 
 import net.minecraft.world.food.FoodProperties;
 
