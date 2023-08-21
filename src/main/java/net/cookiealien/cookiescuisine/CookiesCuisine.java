@@ -1,10 +1,10 @@
 package net.cookiealien.cookiescuisine;
 
+import net.cookiealien.cookiescuisine.block.ModBlocks;
 import net.cookiealien.cookiescuisine.item.ModCreativeModeTabs;
 import net.cookiealien.cookiescuisine.item.ModItems;
 import net.cookiealien.cookiescuisine.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -14,7 +14,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.RegistryObject;
 
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -29,6 +28,7 @@ public class CookiesCuisine
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -58,6 +58,7 @@ public class CookiesCuisine
             event.accept(ModItems.SWEET_COOKIE);
             event.accept(ModItems.FLOUR);
             event.accept(ModItems.DOUGH);
+            event.accept(ModItems.SALT);
             event.accept(ModItems.BOILED_EGG);
             event.accept(ModItems.RAW_CHICKEN_CUTLET);
             event.accept(ModItems.CHICKEN_CUTLET);
@@ -66,11 +67,6 @@ public class CookiesCuisine
             event.accept(ModItems.MORTAR);
             event.accept(ModItems.JUICER);
             event.accept(ModItems.PAPER_CUP);
-        }
-        if(event.getTab() == ModCreativeModeTabs.COOKIESCUISINE_TAB.get()){
-            for (RegistryObject<Item> value : ModItems.ITEMS.getEntries()) {
-                event.accept(value.get());
-            }
         }
     }
 
