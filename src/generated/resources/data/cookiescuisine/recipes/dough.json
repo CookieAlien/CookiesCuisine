@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "cookiescuisine:flour"
+    },
+    {
+      "item": "cookiescuisine:flour"
+    },
+    {
+      "item": "cookiescuisine:flour"
+    },
+    {
+      "item": "cookiescuisine:flour"
+    }
+  ],
+  "result": {
+    "item": "cookiescuisine:dough"
+  }
+}

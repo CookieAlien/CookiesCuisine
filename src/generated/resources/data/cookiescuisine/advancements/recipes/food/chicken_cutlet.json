@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chicken_cutlet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cookiescuisine:chicken_cutlet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cookiescuisine:chicken_cutlet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_chicken_cutlet",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cookiescuisine:chicken_cutlet"
+    ]
+  },
+  "sends_telemetry_event": false
+}
