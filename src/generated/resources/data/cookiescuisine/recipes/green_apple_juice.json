@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cookiescuisine:juicer"
+    },
+    {
+      "item": "cookiescuisine:green_apple"
+    },
+    {
+      "item": "cookiescuisine:paper_cup"
+    }
+  ],
+  "result": {
+    "item": "cookiescuisine:green_apple_juice"
+  }
+}

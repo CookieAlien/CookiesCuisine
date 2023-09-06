@@ -7,14 +7,11 @@ import net.cookiealien.cookiescuisine.util.ModTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
-import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.function.Consumer;
 
@@ -27,7 +24,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         foodCookingRecipes(Items.EGG,ModItems.BOILED_EGG.get(),0.35F, pWriter);
         foodCookingRecipes(ModItems.RAW_CHICKEN_CUTLET.get(), ModItems.CHICKEN_CUTLET.get(),0.35F,pWriter);
-        JuiceRecipes(Items.APPLE,ModItems.GREEN_APPLE_JUICE.get(),1,pWriter);
+        JuiceRecipes(Items.APPLE,ModItems.APPLE_JUICE.get(),1,pWriter);
         JuiceRecipes(Items.CARROT,ModItems.CARROT_JUICE.get(),1,pWriter);
         JuiceRecipes(Items.SWEET_BERRIES,ModItems.SWEET_BERRY_JUICE.get(),2,pWriter);
         JuiceRecipes(Items.MELON,ModItems.WATERMELON_JUICE.get(),2,pWriter);
