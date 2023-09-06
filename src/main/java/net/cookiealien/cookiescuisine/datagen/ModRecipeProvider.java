@@ -27,7 +27,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         foodCookingRecipes(Items.EGG,ModItems.BOILED_EGG.get(),0.35F, pWriter);
         foodCookingRecipes(ModItems.RAW_CHICKEN_CUTLET.get(), ModItems.CHICKEN_CUTLET.get(),0.35F,pWriter);
-        JuiceRecipes(Items.APPLE,ModItems.GREEN_APPLE_JUICE.get(),1,pWriter);
+        JuiceRecipes(Items.APPLE,ModItems.APPLE_JUICE.get(),1,pWriter);
         JuiceRecipes(Items.CARROT,ModItems.CARROT_JUICE.get(),1,pWriter);
         JuiceRecipes(Items.SWEET_BERRIES,ModItems.SWEET_BERRY_JUICE.get(),2,pWriter);
         JuiceRecipes(Items.MELON,ModItems.WATERMELON_JUICE.get(),2,pWriter);
