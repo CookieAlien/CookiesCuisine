@@ -34,6 +34,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PAPER_CUP);
         simpleItem(ModItems.MORTAR);
         simpleItem(ModItems.JUICER);
+        simpleItem(ModItems.RICE);
+        simpleItem(ModItems.RICE_SEEDS);
+        simpleItem(ModItems.RICE_PANICLE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){

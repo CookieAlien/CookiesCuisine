@@ -12,10 +12,14 @@
   "item.cookiescuisine.sweet_berry_juice": "甜莓汁",
   "item.cookiescuisine.watermelon_juice": "西瓜汁",
   "item.cookiescuisine.dough": "麵團",
+  "item.cookiescuisine.raw_water": "生水",
+  "item.cookiescuisine.salt": "鹽",
+  "item.cookiescuisine.rice_seeds": "稻米種子",
+  "item.cookiescuisine.rice_panicle": "稻穗",
+  "item.cookiescuisine.rice": "米飯",
   "item.cookiescuisine.boiled_egg": "水煮蛋",
   "item.cookiescuisine.chicken_cutlet": "雞排",
   "item.cookiescuisine.raw_chicken_cutlet": "生雞排",
-  "item.cookiescuisine.salt": "鹽",
-  "block.cookiescuisine.salt_block": "鹽塊",
-  "item.cookiescuisine.raw_water": "生水"
+  "block.cookiescuisine.salt_block": "鹽塊"
+
 }

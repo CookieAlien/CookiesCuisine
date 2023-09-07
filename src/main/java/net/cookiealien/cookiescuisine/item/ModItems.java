@@ -1,9 +1,11 @@
 package net.cookiealien.cookiescuisine.item;
 import net.cookiealien.cookiescuisine.CookiesCuisine;
+import net.cookiealien.cookiescuisine.block.ModBlocks;
 import net.cookiealien.cookiescuisine.item.custom.JuiceCupItem;
 import net.cookiealien.cookiescuisine.item.custom.ModFoods;
 import net.cookiealien.cookiescuisine.item.custom.ReusableItems;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,6 +28,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_WATER = ITEMS.register("raw_water", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SALT = ITEMS.register("salt", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PAPER_CUP = ITEMS.register("paper_cup", ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RICE_SEEDS = ITEMS.register("rice_seeds", ()-> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RICE_PANICLE = ITEMS.register("rice_panicle", ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RICE = ITEMS.register("rice", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MORTAR = ITEMS.register("mortar", ()-> new ReusableItems(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> JUICER = ITEMS.register("juicer", ()-> new ReusableItems(new Item.Properties().stacksTo(1)));
     public static void register(IEventBus eventBus){
