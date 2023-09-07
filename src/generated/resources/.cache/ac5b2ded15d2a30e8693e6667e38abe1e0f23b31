@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-06T19:57:08.2876883	Item Models: cookiescuisine
+// 1.20.1	2023-09-07T10:31:49.3796138	Item Models: cookiescuisine
 0cb1f850d84588b4a452720dcbf57c7edc75700b assets/cookiescuisine/models/item/apple_juice.json
 662f884f420707c0cf26e8153d7826a219051716 assets/cookiescuisine/models/item/boiled_egg.json
 55cb816a29d1b767f3188cc5bda2ee00a65d3159 assets/cookiescuisine/models/item/carrot_juice.json
@@ -11,6 +11,7 @@ b0bbc43b9321a3a9523aa7846712bc606e1c484c assets/cookiescuisine/models/item/juice
 4e4a97d7e0bd0fb368083d91d0a042efb7f65893 assets/cookiescuisine/models/item/mortar.json
 c5fd0805c25619f11697fbcd2ea64bc3480e908e assets/cookiescuisine/models/item/paper_cup.json
 55bd69065cd199c5d27b7ae895c9e0a1cf438f43 assets/cookiescuisine/models/item/raw_chicken_cutlet.json
+bfb34ddeb6632b78b3c972c58ab71a324a5383c7 assets/cookiescuisine/models/item/raw_water.json
 35392c1b63d709bb89adf830cabc2d950ddade2d assets/cookiescuisine/models/item/salt.json
 1f9118bb944ce0803a3bb255cc706e3ef254fe7b assets/cookiescuisine/models/item/sweet_berry_juice.json
 87c033d43adc68d3e007918784b031230d461ea8 assets/cookiescuisine/models/item/sweet_cookie.json

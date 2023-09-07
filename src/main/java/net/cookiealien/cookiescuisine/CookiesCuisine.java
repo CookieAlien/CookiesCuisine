@@ -58,6 +58,7 @@ public class CookiesCuisine
             event.accept(ModItems.SWEET_COOKIE);
             event.accept(ModItems.FLOUR);
             event.accept(ModItems.DOUGH);
+            event.accept(ModItems.RAW_WATER);
             event.accept(ModItems.SALT);
             event.accept(ModItems.BOILED_EGG);
             event.accept(ModItems.RAW_CHICKEN_CUTLET);

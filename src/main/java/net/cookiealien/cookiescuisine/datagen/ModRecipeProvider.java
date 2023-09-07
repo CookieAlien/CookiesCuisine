@@ -72,6 +72,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.FLOUR.get(),4)
                 .unlockedBy(getHasName(ModItems.DOUGH.get()),has(ModItems.DOUGH.get()))
                 .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.RAW_WATER.get(),8)
+                .requires(Items.WATER_BUCKET)
+                .unlockedBy(getHasName(ModItems.RAW_WATER.get()),has(ModItems.RAW_WATER.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.DOUGH.get(),4)
+                .requires(ModItems.RAW_WATER.get())
+                .requires(ModItems.FLOUR.get(),4)
+                .unlockedBy(getHasName(ModItems.DOUGH.get()),has(ModItems.DOUGH.get()))
+                .save(pWriter,new ResourceLocation(CookiesCuisine.MODID, "flour_from_raw_water"));
+
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.RAW_WATER.get()),RecipeCategory.FOOD,ModItems.SALT.get(), 0.35F,200)
+                .unlockedBy(getHasName(ModItems.SALT.get()),has(ModItems.SALT.get()))
+                .save(pWriter);
     }
 
     private static void foodCookingRecipes(ItemLike ingredient, ItemLike result, float exp, Consumer<FinishedRecipe> consumer){

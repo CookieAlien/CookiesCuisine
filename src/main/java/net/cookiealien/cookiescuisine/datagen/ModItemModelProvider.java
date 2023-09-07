@@ -29,6 +29,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.WATERMELON_JUICE);
         simpleItem(ModItems.FLOUR);
         simpleItem(ModItems.DOUGH);
+        simpleItem(ModItems.RAW_WATER);
         simpleItem(ModItems.SALT);
         simpleItem(ModItems.PAPER_CUP);
         simpleItem(ModItems.MORTAR);
