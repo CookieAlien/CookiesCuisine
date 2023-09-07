@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cookiescuisine:mortar"
+    },
+    {
+      "item": "cookiescuisine:rice_panicle"
+    }
+  ],
+  "result": {
+    "item": "cookiescuisine:rice"
+  }
+}

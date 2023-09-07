@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-07T10:31:49.3766215	Recipes
+// 1.20.1	2023-09-07T16:25:25.022985	Recipes
 5d035597c30d9e1c37f36b2714bec09097624457 data/cookiescuisine/advancements/recipes/food/apple_juice.json
 872d267b04fde06cf0cfbd845b2d87fef886ff45 data/cookiescuisine/advancements/recipes/food/boiled_egg.json
 d0e6c3c68cb146afe571cb980f3b9b829c55ee55 data/cookiescuisine/advancements/recipes/food/boiled_egg_from_campfire_cooking.json
@@ -11,12 +11,14 @@ b4637c7adf35854cca206e182720fbda10f41327 data/cookiescuisine/advancements/recipe
 7b280bd53c834b239dadfe1f3cd647e07b94ab71 data/cookiescuisine/advancements/recipes/food/flour.json
 dd0b2f16c71c7b54349820f08e8f9edd5d40c601 data/cookiescuisine/advancements/recipes/food/flour_from_raw_water.json
 c2fbb2941512e590ac79f91320f945d86f543ba6 data/cookiescuisine/advancements/recipes/food/green_apple_juice.json
+a4be0ea1cad927801b14044eef740a3347e07794 data/cookiescuisine/advancements/recipes/food/rice.json
 f7896be696604125084f4cd22e68226d56c7145b data/cookiescuisine/advancements/recipes/food/salt.json
 a25d39eacb0c8ce12db9633db90ba6b5fcce75e8 data/cookiescuisine/advancements/recipes/food/sweet_berry_juice.json
 e231e1ae3b31c80941e9284261e3bdb0a4465ea3 data/cookiescuisine/advancements/recipes/food/sweet_cookie.json
 0df82f98d76fcb1a44b1705f92b60b531ddb6023 data/cookiescuisine/advancements/recipes/food/watermelon_juice.json
 68fe209bc3cd4535c14b898a69a05952e63dab7f data/cookiescuisine/advancements/recipes/misc/paper_cup.json
 b2ab51fb67a4f33b22957be2c4b7442cbde889d8 data/cookiescuisine/advancements/recipes/misc/raw_water.json
+7344235439ce1bd871c2e5a64064ab57e063318e data/cookiescuisine/advancements/recipes/misc/rice_seeds.json
 baa8ea0f6b381b54c890d0382110bf627132c1dd data/cookiescuisine/advancements/recipes/misc/salt_block.json
 9e9f85c54f88acadd43e873540cc16a044baecc5 data/cookiescuisine/advancements/recipes/tools/juicer.json
 fc34ff1e38730ef0ec8b21e103b51d2ae38339a5 data/cookiescuisine/advancements/recipes/tools/mortar.json
@@ -36,6 +38,8 @@ e742a68678c7fb2af1446005bb9e6d4408f5a30b data/cookiescuisine/recipes/flour_from_
 1af8ec5d015adfb45ca2ab03409e5d38db7e6f04 data/cookiescuisine/recipes/mortar.json
 47aad2f9366f2fe4c22f4c950f6aea1b0d21803f data/cookiescuisine/recipes/paper_cup.json
 d16873df25317421567f1fbc540ce3b7dd231fe5 data/cookiescuisine/recipes/raw_water.json
+5e6b4856226c09ddee23d4d6d083964a22ba86ee data/cookiescuisine/recipes/rice.json
+9ad293f708984974399c4866fa007a565d710e01 data/cookiescuisine/recipes/rice_seeds.json
 7af0546ef07eb847847d9b6c764f70b43d47c765 data/cookiescuisine/recipes/salt.json
 509cb982080390d8ee622879a1ce148f0ad796db data/cookiescuisine/recipes/salt_block.json
 e16842f77f7c9738fae9be9cd02064cf6ef90c77 data/cookiescuisine/recipes/sweet_berry_juice.json

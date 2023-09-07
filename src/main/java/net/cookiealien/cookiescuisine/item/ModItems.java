@@ -30,7 +30,7 @@ public class ModItems {
     public static final RegistryObject<Item> PAPER_CUP = ITEMS.register("paper_cup", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RICE_SEEDS = ITEMS.register("rice_seeds", ()-> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> RICE_PANICLE = ITEMS.register("rice_panicle", ()-> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> RICE = ITEMS.register("rice", ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RICE = ITEMS.register("rice", ()-> new Item(new Item.Properties().food(ModFoods.RICE)));
     public static final RegistryObject<Item> MORTAR = ITEMS.register("mortar", ()-> new ReusableItems(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> JUICER = ITEMS.register("juicer", ()-> new ReusableItems(new Item.Properties().stacksTo(1)));
     public static void register(IEventBus eventBus){
