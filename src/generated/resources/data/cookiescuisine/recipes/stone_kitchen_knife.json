@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "m": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "m  ",
+    " m ",
+    "  s"
+  ],
+  "result": {
+    "item": "cookiescuisine:stone_kitchen_knife"
+  },
+  "show_notification": true
+}

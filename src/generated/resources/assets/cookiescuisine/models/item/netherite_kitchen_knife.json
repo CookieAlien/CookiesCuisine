@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "cookiescuisine:item/netherite_kitchen_knife"
+  }
+}

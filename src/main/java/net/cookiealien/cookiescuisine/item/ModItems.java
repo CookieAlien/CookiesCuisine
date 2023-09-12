@@ -2,10 +2,12 @@ package net.cookiealien.cookiescuisine.item;
 import net.cookiealien.cookiescuisine.CookiesCuisine;
 import net.cookiealien.cookiescuisine.block.ModBlocks;
 import net.cookiealien.cookiescuisine.item.custom.JuiceCupItem;
+import net.cookiealien.cookiescuisine.item.custom.KnifeItem;
 import net.cookiealien.cookiescuisine.item.custom.ModFoods;
 import net.cookiealien.cookiescuisine.item.custom.ReusableItems;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -33,6 +35,11 @@ public class ModItems {
     public static final RegistryObject<Item> RICE = ITEMS.register("rice", ()-> new Item(new Item.Properties().food(ModFoods.RICE)));
     public static final RegistryObject<Item> MORTAR = ITEMS.register("mortar", ()-> new ReusableItems(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> JUICER = ITEMS.register("juicer", ()-> new ReusableItems(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> STONE_KITCHEN_KNIFE = ITEMS.register("stone_kitchen_knife", ()-> new KnifeItem(Tiers.STONE, 2, -2.2F, new Item.Properties()));
+    public static final RegistryObject<Item> IRON_KITCHEN_KNIFE = ITEMS.register("iron_kitchen_knife", ()-> new KnifeItem(Tiers.IRON, 2, -2.2F, new Item.Properties()));
+    public static final RegistryObject<Item> GOLDEN_KITCHEN_KNIFE = ITEMS.register("golden_kitchen_knife", ()-> new KnifeItem(Tiers.GOLD, 2, -2.2F, new Item.Properties()));
+    public static final RegistryObject<Item> DIAMOND_KITCHEN_KNIFE = ITEMS.register("diamond_kitchen_knife", ()-> new KnifeItem(Tiers.DIAMOND, 2, -2.2F, new Item.Properties()));
+    public static final RegistryObject<Item> NETHERITE_KITCHEN_KNIFE = ITEMS.register("netherite_kitchen_knife", ()-> new KnifeItem(Tiers.NETHERITE, 2, -2.2F, new Item.Properties()));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

@@ -20,6 +20,11 @@
   "item.cookiescuisine.boiled_egg": "Boiled Egg",
   "item.cookiescuisine.chicken_cutlet": "Chicken Cutlet",
   "item.cookiescuisine.raw_chicken_cutlet": "Raw Chicken Cutlet",
+  "item.cookiescuisine.stone_kitchen_knife": "Stone Kitchen Knife",
+  "item.cookiescuisine.iron_kitchen_knife": "Iron Kitchen Knife",
+  "item.cookiescuisine.golden_kitchen_knife": "Golden Kitchen Knife",
+  "item.cookiescuisine.diamond_kitchen_knife": "Diamond Kitchen Knife",
+  "item.cookiescuisine.netherite_kitchen_knife": "Netherite Kitchen Knife",
   "block.cookiescuisine.salt_block": "Salt Block"
 
 }

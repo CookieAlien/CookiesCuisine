@@ -4,11 +4,14 @@ import net.cookiealien.cookiescuisine.CookiesCuisine;
 import net.cookiealien.cookiescuisine.block.ModBlocks;
 import net.cookiealien.cookiescuisine.item.ModItems;
 import net.cookiealien.cookiescuisine.util.ModTags;
+import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.SmithingRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
@@ -29,6 +32,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         JuiceRecipes(Items.SWEET_BERRIES,ModItems.SWEET_BERRY_JUICE.get(),2,pWriter);
         JuiceRecipes(Items.MELON,ModItems.WATERMELON_JUICE.get(),2,pWriter);
         JuiceRecipes(ModItems.GREEN_APPLE.get(), ModItems.GREEN_APPLE_JUICE.get(),1,pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS,ModItems.STONE_KITCHEN_KNIFE.get())
+                .pattern("m  ")
+                .pattern(" m ")
+                .pattern("  s")
+                .define('m',ItemTags.STONE_TOOL_MATERIALS)
+                .define('s',Items.STICK)
+                .unlockedBy(getHasName(ModItems.STONE_KITCHEN_KNIFE.get()),has(ModItems.STONE_KITCHEN_KNIFE.get()))
+                .save(pWriter);
+        KnifeRecipes(Items.IRON_INGOT,ModItems.IRON_KITCHEN_KNIFE.get(),pWriter);
+        KnifeRecipes(Items.GOLD_INGOT,ModItems.GOLDEN_KITCHEN_KNIFE.get(),pWriter);
+        KnifeRecipes(Items.DIAMOND,ModItems.DIAMOND_KITCHEN_KNIFE.get(),pWriter);
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),Ingredient.of(ModItems.DIAMOND_KITCHEN_KNIFE.get()),Ingredient.of(Items.NETHERITE_INGOT),
+                RecipeCategory.TOOLS,ModItems.NETHERITE_KITCHEN_KNIFE.get()).unlocks("has_netherite_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(Items.NETHERITE_INGOT)).save(pWriter,CookiesCuisine.MODID + ":netherite_kitchen_knife");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SALT_BLOCK.get())
                 .pattern("XX")
@@ -109,6 +126,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.JUICER.get())
                 .requires(ingredient,quantity)
                 .requires(ModItems.PAPER_CUP.get())
+                .unlockedBy(getHasName(result),has(result))
+                .save(consumer);
+    }
+
+    private static void KnifeRecipes(ItemLike ingredient, ItemLike result, Consumer<FinishedRecipe> consumer){
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS,result)
+                .pattern("m  ")
+                .pattern(" m ")
+                .pattern("  s")
+                .define('m',ingredient)
+                .define('s',Items.STICK)
                 .unlockedBy(getHasName(result),has(result))
                 .save(consumer);
     }

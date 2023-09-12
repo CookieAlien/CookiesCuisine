@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stone_kitchen_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cookiescuisine:stone_kitchen_knife"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cookiescuisine:stone_kitchen_knife"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_stone_kitchen_knife",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cookiescuisine:stone_kitchen_knife"
+    ]
+  },
+  "sends_telemetry_event": false
+}

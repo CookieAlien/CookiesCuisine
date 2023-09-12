@@ -37,11 +37,23 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RICE);
         simpleItem(ModItems.RICE_SEEDS);
         simpleItem(ModItems.RICE_PANICLE);
+
+        heldItem(ModItems.STONE_KITCHEN_KNIFE);
+        heldItem(ModItems.GOLDEN_KITCHEN_KNIFE);
+        heldItem(ModItems.IRON_KITCHEN_KNIFE);
+        heldItem(ModItems.DIAMOND_KITCHEN_KNIFE);
+        heldItem(ModItems.NETHERITE_KITCHEN_KNIFE);
+
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(CookiesCuisine.MODID, "item/"+item.getId().getPath()));
+    }
+    private ItemModelBuilder heldItem(RegistryObject<Item> item){
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
                 new ResourceLocation(CookiesCuisine.MODID, "item/"+item.getId().getPath()));
     }
 }

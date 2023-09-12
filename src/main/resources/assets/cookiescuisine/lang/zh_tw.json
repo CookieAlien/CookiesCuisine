@@ -20,6 +20,11 @@
   "item.cookiescuisine.boiled_egg": "水煮蛋",
   "item.cookiescuisine.chicken_cutlet": "雞排",
   "item.cookiescuisine.raw_chicken_cutlet": "生雞排",
-  "block.cookiescuisine.salt_block": "鹽塊"
+  "block.cookiescuisine.salt_block": "鹽塊",
+  "item.cookiescuisine.stone_kitchen_knife": "石廚刀",
+  "item.cookiescuisine.iron_kitchen_knife": "鐵廚刀",
+  "item.cookiescuisine.golden_kitchen_knife": "黃金廚刀",
+  "item.cookiescuisine.diamond_kitchen_knife": "鑽石廚刀",
+  "item.cookiescuisine.netherite_kitchen_knife": "獄髓廚刀"
 
 }
