@@ -1,6 +1,7 @@
 package net.cookiealien.cookiescuisine.datagen.loot;
 
 import net.cookiealien.cookiescuisine.block.ModBlocks;
+import net.cookiealien.cookiescuisine.block.custom.CabbageCropBlock;
 import net.cookiealien.cookiescuisine.block.custom.RiceCropBlock;
 import net.cookiealien.cookiescuisine.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -40,6 +41,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.RICE_CROP.get(), createCropDrops(ModBlocks.RICE_CROP.get(), ModItems.RICE_PANICLE.get(),
                 ModItems.RICE_SEEDS.get(), lootitemcondition$builder));
+
+        LootItemCondition.Builder lootitemcondition$builder2 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.CABBAGE_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CabbageCropBlock.AGE, 5));
+        this.add(ModBlocks.CABBAGE_CROP.get(), createCropDrops(ModBlocks.CABBAGE_CROP.get(), ModItems.CABBAGE.get(),
+                ModItems.CABBAGE_SEEDS.get(), lootitemcondition$builder2));
     }
     protected LootTable.Builder createSaltDrops(Block pBlock) {
         return createSilkTouchDispatchTable(pBlock, this.applyExplosionDecay(pBlock, LootItem.lootTableItem(ModItems.SALT.get()).apply(SetItemCountFunction.setCount(ConstantValue.exactly(4.0F)))));

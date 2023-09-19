@@ -2,6 +2,7 @@ package net.cookiealien.cookiescuisine.datagen;
 
 import net.cookiealien.cookiescuisine.CookiesCuisine;
 import net.cookiealien.cookiescuisine.block.ModBlocks;
+import net.cookiealien.cookiescuisine.block.custom.CabbageCropBlock;
 import net.cookiealien.cookiescuisine.block.custom.RiceCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -22,6 +23,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.SALT_BLOCK);
         cropBlock(ModBlocks.RICE_CROP.get(),"rice", RiceCropBlock.AGE);
+        cropCrossBlock(ModBlocks.CABBAGE_CROP.get(),"cabbage", CabbageCropBlock.AGE);
     }
 
     public void cropBlock(Block block, String cropName, IntegerProperty ageProperty){
@@ -30,6 +32,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
             String stageName = cropName + "_stage" + ageSuffix;
             return ConfiguredModel.builder()
                     .modelFile(models().crop(stageName,new ResourceLocation(CookiesCuisine.MODID,"block/"+ stageName)).renderType("cutout")).build();
+        } );
+    }
+    public void cropCrossBlock(Block block, String cropName, IntegerProperty ageProperty){
+        getVariantBuilder(block).forAllStates(blockState ->{
+            int ageSuffix = blockState.getValue(ageProperty);
+            String stageName = cropName + "_stage" + ageSuffix;
+            return ConfiguredModel.builder()
+                    .modelFile(models().cross(stageName,new ResourceLocation(CookiesCuisine.MODID,"block/"+ stageName)).renderType("cutout")).build();
         } );
     }
 

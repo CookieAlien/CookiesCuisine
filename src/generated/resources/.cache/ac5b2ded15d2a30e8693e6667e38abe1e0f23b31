@@ -1,6 +1,8 @@
-// 1.20.1	2023-09-12T15:07:27.9210752	Item Models: cookiescuisine
+// 1.20.1	2023-09-19T21:40:54.4701857	Item Models: cookiescuisine
 0cb1f850d84588b4a452720dcbf57c7edc75700b assets/cookiescuisine/models/item/apple_juice.json
 662f884f420707c0cf26e8153d7826a219051716 assets/cookiescuisine/models/item/boiled_egg.json
+af6032f0abfb3af6c3e309395df778f1758b1084 assets/cookiescuisine/models/item/cabbage.json
+d9df85e932e6fac5cbd76bbf5adb4ec9b18c42c5 assets/cookiescuisine/models/item/cabbage_seeds.json
 55cb816a29d1b767f3188cc5bda2ee00a65d3159 assets/cookiescuisine/models/item/carrot_juice.json
 df17a771b36e4d57103bf4d19b24dfda486a7698 assets/cookiescuisine/models/item/chicken_cutlet.json
 8ab1ba041f85046078c76eba637979a52926252d assets/cookiescuisine/models/item/diamond_kitchen_knife.json

@@ -3,7 +3,9 @@ package net.cookiealien.cookiescuisine.datagen;
 import net.cookiealien.cookiescuisine.CookiesCuisine;
 import net.cookiealien.cookiescuisine.item.ModItems;
 import net.cookiealien.cookiescuisine.loot.AddItemModifier;
+import net.cookiealien.cookiescuisine.loot.AddLootTableModifier;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
@@ -11,6 +13,7 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePrope
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraftforge.common.data.GlobalLootModifierProvider;
+import net.minecraftforge.common.loot.LootTableIdCondition;
 
 public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
     public ModGlobalLootModifiersProvider(PackOutput output) {
@@ -28,5 +31,8 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS).build(),
                 LootItemRandomChanceCondition.randomChance(0.2F).build()
         },ModItems.RICE_SEEDS.get()));
+        add("village_plains_house_test",new AddLootTableModifier(new LootItemCondition[]{
+                LootTableIdCondition.builder(new ResourceLocation("chests/village/village_plains_house")).build()
+        },new ResourceLocation(CookiesCuisine.MODID,"chests/cc_village_plains_house")));
     }
 }

@@ -1,0 +1,10 @@
+{
+  "type": "cookiescuisine:add_loot_table",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_plains_house"
+    }
+  ],
+  "lootTable": "cookiescuisine:chests/cc_village_plains_house"
+}

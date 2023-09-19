@@ -13,6 +13,8 @@ public class ModLootModifiers {
             DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, CookiesCuisine.MODID);
     public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ADD_ITEM =
             LOOT_MODIFIER_SERIALIZERS.register("add_item",AddItemModifier.CODEC);
+    public static final RegistryObject<Codec<? extends IGlobalLootModifier>> ADD_LOOT_TABLE =
+            LOOT_MODIFIER_SERIALIZERS.register("add_loot_table",AddLootTableModifier.CODEC);
     public static void register(IEventBus Bus) {
         LOOT_MODIFIER_SERIALIZERS.register(Bus);
     }

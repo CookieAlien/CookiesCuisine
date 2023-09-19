@@ -1,6 +1,7 @@
 package net.cookiealien.cookiescuisine.block;
 
 import net.cookiealien.cookiescuisine.CookiesCuisine;
+import net.cookiealien.cookiescuisine.block.custom.CabbageCropBlock;
 import net.cookiealien.cookiescuisine.block.custom.RiceCropBlock;
 import net.cookiealien.cookiescuisine.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -23,8 +24,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SALT_BLOCK = registerBlock("salt_block",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).mapColor(MapColor.SAND).sound(SoundType.SAND)));
     public static final RegistryObject<Block> RICE_CROP = BLOCKS.register("rice_crop",
-            ()-> new RiceCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noOcclusion()));
-
+                ()-> new RiceCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> CABBAGE_CROP = BLOCKS.register("cabbage_crop",
+            ()-> new CabbageCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name,block);
         registerBlockItem(name,toReturn);
