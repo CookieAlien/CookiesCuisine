@@ -1,5 +1,6 @@
-// 1.20.1	2023-09-19T23:16:28.4849663	Global Loot Modifiers : cookiescuisine
+// 1.20.1	2023-09-20T13:40:12.516121	Global Loot Modifiers : cookiescuisine
 00a6bb0d554736df31d661bcb654cdaaeea46888 data/cookiescuisine/loot_modifiers/green_apple_from_oak_leaves.json
 a95215b280066f75243ce33c6a2d2603908d58fa data/cookiescuisine/loot_modifiers/rice_seeds_from_grass.json
-a2310820044ecccd09af1c1dc896a71430042e8e data/cookiescuisine/loot_modifiers/village_plains_house_test.json
-7cd4e291e5f5c34089b20194e4cad0a73729e469 data/forge/loot_modifiers/global_loot_modifiers.json
+3edab69581e072a74df5c9890385c0ef5e790d4c data/cookiescuisine/loot_modifiers/village_plains_house_test.json
+8179788263ed8a6a64c66289d0ce2d0be01211ca data/cookiescuisine/loot_modifiers/village_savanna_house_test.json
+9440d3eb0e1bebac0d6a5c49291e04b222904490 data/forge/loot_modifiers/global_loot_modifiers.json
