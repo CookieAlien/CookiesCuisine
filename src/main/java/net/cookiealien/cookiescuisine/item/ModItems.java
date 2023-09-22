@@ -1,10 +1,7 @@
 package net.cookiealien.cookiescuisine.item;
 import net.cookiealien.cookiescuisine.CookiesCuisine;
 import net.cookiealien.cookiescuisine.block.ModBlocks;
-import net.cookiealien.cookiescuisine.item.custom.JuiceCupItem;
-import net.cookiealien.cookiescuisine.item.custom.KnifeItem;
-import net.cookiealien.cookiescuisine.item.custom.ModFoods;
-import net.cookiealien.cookiescuisine.item.custom.ReusableItems;
+import net.cookiealien.cookiescuisine.item.custom.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Tiers;
@@ -20,6 +17,8 @@ public class ModItems {
     public static final RegistryObject<Item> BOILED_EGG = ITEMS.register("boiled_egg", ()-> new Item(new Item.Properties().food(ModFoods.BOILED_EGG)));
     public static final RegistryObject<Item> RAW_CHICKEN_CUTLET = ITEMS.register("raw_chicken_cutlet", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CHICKEN_CUTLET = ITEMS.register("chicken_cutlet", ()-> new Item(new Item.Properties().food(ModFoods.CHICKEN_CUTLET)));
+    public static final RegistryObject<Item> SHRED_CHICKEN = ITEMS.register("shred_chicken", ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SHRED_CHICKEN_RICE = ITEMS.register("shred_chicken_rice", ()-> new ModBowlFoodItem(new Item.Properties().food(ModFoods.SHRED_CHICKEN_RICE)));
     public static final RegistryObject<Item> APPLE_JUICE = ITEMS.register("apple_juice", ()-> new JuiceCupItem(new Item.Properties().food(ModFoods.APPLE_JUICE)));
     public static final RegistryObject<Item> CARROT_JUICE = ITEMS.register("carrot_juice", ()-> new JuiceCupItem(new Item.Properties().food(ModFoods.CARROT_JUICE)));
     public static final RegistryObject<Item> GREEN_APPLE_JUICE = ITEMS.register("green_apple_juice", ()-> new JuiceCupItem(new Item.Properties().food(ModFoods.GREEN_APPLE_JUICE)));

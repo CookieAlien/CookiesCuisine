@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-12T15:34:33.3335347	Recipes
+// 1.20.1	2023-09-22T11:51:09.1705111	Recipes
 5d035597c30d9e1c37f36b2714bec09097624457 data/cookiescuisine/advancements/recipes/food/apple_juice.json
 872d267b04fde06cf0cfbd845b2d87fef886ff45 data/cookiescuisine/advancements/recipes/food/boiled_egg.json
 d0e6c3c68cb146afe571cb980f3b9b829c55ee55 data/cookiescuisine/advancements/recipes/food/boiled_egg_from_campfire_cooking.json
@@ -13,6 +13,8 @@ dd0b2f16c71c7b54349820f08e8f9edd5d40c601 data/cookiescuisine/advancements/recipe
 c2fbb2941512e590ac79f91320f945d86f543ba6 data/cookiescuisine/advancements/recipes/food/green_apple_juice.json
 a4be0ea1cad927801b14044eef740a3347e07794 data/cookiescuisine/advancements/recipes/food/rice.json
 f7896be696604125084f4cd22e68226d56c7145b data/cookiescuisine/advancements/recipes/food/salt.json
+19a2aa5b10d80e69294cd4deac0916ad17dcaad4 data/cookiescuisine/advancements/recipes/food/shred_chicken.json
+f91a1ba6312e809f8fef000cf8fb6c3bc2a05211 data/cookiescuisine/advancements/recipes/food/shred_chicken_rice.json
 a25d39eacb0c8ce12db9633db90ba6b5fcce75e8 data/cookiescuisine/advancements/recipes/food/sweet_berry_juice.json
 e231e1ae3b31c80941e9284261e3bdb0a4465ea3 data/cookiescuisine/advancements/recipes/food/sweet_cookie.json
 0df82f98d76fcb1a44b1705f92b60b531ddb6023 data/cookiescuisine/advancements/recipes/food/watermelon_juice.json
@@ -51,6 +53,8 @@ d16873df25317421567f1fbc540ce3b7dd231fe5 data/cookiescuisine/recipes/raw_water.j
 9ad293f708984974399c4866fa007a565d710e01 data/cookiescuisine/recipes/rice_seeds.json
 7af0546ef07eb847847d9b6c764f70b43d47c765 data/cookiescuisine/recipes/salt.json
 509cb982080390d8ee622879a1ce148f0ad796db data/cookiescuisine/recipes/salt_block.json
+38c14c48d37b9b8288b7f16673de7c9accd685a6 data/cookiescuisine/recipes/shred_chicken.json
+540c8a065a818adc7e38c30d0e39c45254dc6e13 data/cookiescuisine/recipes/shred_chicken_rice.json
 502768f220a8fd10bdabe1cc8d07b553b30a3f17 data/cookiescuisine/recipes/stone_kitchen_knife.json
 e16842f77f7c9738fae9be9cd02064cf6ef90c77 data/cookiescuisine/recipes/sweet_berry_juice.json
 61a3cf896c84496335c6cbb6585737bb3c149d3a data/cookiescuisine/recipes/sweet_cookie.json

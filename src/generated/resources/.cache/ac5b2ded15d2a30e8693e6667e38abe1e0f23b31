@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-19T21:40:54.4701857	Item Models: cookiescuisine
+// 1.20.1	2023-09-22T11:51:09.1725053	Item Models: cookiescuisine
 0cb1f850d84588b4a452720dcbf57c7edc75700b assets/cookiescuisine/models/item/apple_juice.json
 662f884f420707c0cf26e8153d7826a219051716 assets/cookiescuisine/models/item/boiled_egg.json
 af6032f0abfb3af6c3e309395df778f1758b1084 assets/cookiescuisine/models/item/cabbage.json
@@ -22,6 +22,8 @@ f496d21d453d50cd62b5ae8143df519918038877 assets/cookiescuisine/models/item/rice.
 9023d8da818fadf926be94e699cbe311c15b8713 assets/cookiescuisine/models/item/rice_panicle.json
 91c1d1174cecc28728b641da14b8d83115e5b42a assets/cookiescuisine/models/item/rice_seeds.json
 35392c1b63d709bb89adf830cabc2d950ddade2d assets/cookiescuisine/models/item/salt.json
+7bbcff4391adee57fc87767d051f3ad835054aba assets/cookiescuisine/models/item/shred_chicken.json
+a7cb0c3a09d251091e93d20235a3db377c8365bd assets/cookiescuisine/models/item/shred_chicken_rice.json
 370004933938ad561c7c673f17f7e929d33851c9 assets/cookiescuisine/models/item/stone_kitchen_knife.json
 1f9118bb944ce0803a3bb255cc706e3ef254fe7b assets/cookiescuisine/models/item/sweet_berry_juice.json
 87c033d43adc68d3e007918784b031230d461ea8 assets/cookiescuisine/models/item/sweet_cookie.json

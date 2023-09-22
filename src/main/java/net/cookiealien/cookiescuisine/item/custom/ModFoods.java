@@ -14,4 +14,5 @@ public class ModFoods {
     public static final FoodProperties CHICKEN_CUTLET = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.6F).meat().build();
     public static final FoodProperties RICE = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.1F).build();
     public static final FoodProperties CABBAGE = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.2F).build();
+    public static final FoodProperties SHRED_CHICKEN_RICE = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.4F).build();
 }

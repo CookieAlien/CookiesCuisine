@@ -108,6 +108,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.RICE_PANICLE.get())
                 .unlockedBy(getHasName(ModItems.RICE.get()),has(ModItems.RICE.get()))
                 .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD,ModItems.SHRED_CHICKEN.get(),2)
+                .requires(ModTags.Items.KITCHEN_KNIVES)
+                .requires(Items.CHICKEN)
+                .unlockedBy(getHasName(Items.CHICKEN),has(Items.CHICKEN))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.SHRED_CHICKEN_RICE.get())
+                .requires(Items.BOWL)
+                .requires(ModItems.RICE.get())
+                .requires(ModItems.SHRED_CHICKEN.get())
+                .unlockedBy(getHasName(ModItems.RICE.get()),has(ModItems.RICE.get()))
+                .save(pWriter);
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.RAW_WATER.get()),RecipeCategory.FOOD,ModItems.SALT.get(), 0.35F,200)
                 .unlockedBy(getHasName(ModItems.SALT.get()),has(ModItems.SALT.get()))

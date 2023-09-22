@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "cookiescuisine:rice"
+    },
+    {
+      "item": "cookiescuisine:shred_chicken"
+    }
+  ],
+  "result": {
+    "item": "cookiescuisine:shred_chicken_rice"
+  }
+}
