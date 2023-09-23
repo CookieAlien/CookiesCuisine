@@ -18,7 +18,7 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_CHICKEN_CUTLET = ITEMS.register("raw_chicken_cutlet", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CHICKEN_CUTLET = ITEMS.register("chicken_cutlet", ()-> new Item(new Item.Properties().food(ModFoods.CHICKEN_CUTLET)));
     public static final RegistryObject<Item> SHRED_CHICKEN = ITEMS.register("shred_chicken", ()-> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SHRED_CHICKEN_RICE = ITEMS.register("shred_chicken_rice", ()-> new ModBowlFoodItem(new Item.Properties().food(ModFoods.SHRED_CHICKEN_RICE)));
+    public static final RegistryObject<Item> SHRED_CHICKEN_RICE = ITEMS.register("shred_chicken_rice", ()-> new ModBowlFoodItem(new Item.Properties().food(ModFoods.SHRED_CHICKEN_RICE).stacksTo(16)));
     public static final RegistryObject<Item> APPLE_JUICE = ITEMS.register("apple_juice", ()-> new JuiceCupItem(new Item.Properties().food(ModFoods.APPLE_JUICE)));
     public static final RegistryObject<Item> CARROT_JUICE = ITEMS.register("carrot_juice", ()-> new JuiceCupItem(new Item.Properties().food(ModFoods.CARROT_JUICE)));
     public static final RegistryObject<Item> GREEN_APPLE_JUICE = ITEMS.register("green_apple_juice", ()-> new JuiceCupItem(new Item.Properties().food(ModFoods.GREEN_APPLE_JUICE)));
