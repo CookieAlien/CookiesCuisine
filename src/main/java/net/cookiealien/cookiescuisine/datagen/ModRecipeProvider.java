@@ -77,6 +77,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X',Items.SUGAR)
                 .unlockedBy(getHasName(ModItems.SWEET_COOKIE.get()),has(ModItems.SWEET_COOKIE.get()))
                 .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,ModItems.BENTO_BOX.get(),4)
+                .pattern("p p")
+                .pattern("ppp")
+                .define('p',Items.PAPER)
+                .unlockedBy(getHasName(ModItems.BENTO_BOX.get()),has(ModItems.BENTO_BOX.get()))
+                .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.FLOUR.get())
                 .requires(ModItems.MORTAR.get())
@@ -119,6 +125,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.SHRED_CHICKEN.get())
                 .unlockedBy(getHasName(ModItems.RICE.get()),has(ModItems.RICE.get()))
                 .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD,ModItems.ONIGIRI.get())
+                .requires(ModItems.RICE.get())
+                .requires(Items.DRIED_KELP)
+                .unlockedBy(getHasName(ModItems.RICE.get()),has(ModItems.RICE.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD,ModItems.BENTO.get())
+                .requires(ModItems.BENTO_BOX.get())
+                .requires(ModItems.RICE.get())
+                .requires(ModTags.Items.BENTO_MAIN_DISHES)
+                .requires(ModTags.Items.BENTO_SIDES)
+                .requires(ModTags.Items.BENTO_SIDES)
+                .requires(ModTags.Items.BENTO_SIDES)
+                .unlockedBy(getHasName(ModItems.RICE.get()),has(ModItems.RICE.get()))
+                .save(pWriter);
+
+
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.RAW_WATER.get()),RecipeCategory.FOOD,ModItems.SALT.get(), 0.35F,200)
                 .unlockedBy(getHasName(ModItems.SALT.get()),has(ModItems.SALT.get()))

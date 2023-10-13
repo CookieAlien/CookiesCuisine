@@ -1,3 +1,5 @@
-// 1.20.1	2023-10-13T09:37:21.079355	Tags for minecraft:item mod id cookiescuisine
+// 1.20.1	2023-10-13T11:14:40.8965635	Tags for minecraft:item mod id cookiescuisine
+df776c188066ba70858258bf00f593f218624c12 data/cookiescuisine/tags/items/bento_main_dishes.json
+37959acceebfafa66ebe4e34163e0d8db33eeb29 data/cookiescuisine/tags/items/bento_sides.json
 219113490522422af9e32686658f63f69701b58f data/cookiescuisine/tags/items/kitchen_knives.json
 9481977d8b4b28b1ae5539640fc0b3099a610931 data/forge/tags/items/vegetables.json

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cookiescuisine:bento_box"
+    },
+    {
+      "item": "cookiescuisine:rice"
+    },
+    {
+      "tag": "cookiescuisine:bento_main_dishes"
+    },
+    {
+      "tag": "cookiescuisine:bento_sides"
+    },
+    {
+      "tag": "cookiescuisine:bento_sides"
+    },
+    {
+      "tag": "cookiescuisine:bento_sides"
+    }
+  ],
+  "result": {
+    "item": "cookiescuisine:bento"
+  }
+}
