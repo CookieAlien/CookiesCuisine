@@ -41,6 +41,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CABBAGE);
         simpleItem(ModItems.SHRED_CHICKEN);
         simpleItem(ModItems.SHRED_CHICKEN_RICE);
+        simpleItem(ModItems.ONIGIRI);
+        simpleItem(ModItems.BENTO_BOX);
+        simpleItem(ModItems.BENTO);
 
 
         heldItem(ModItems.STONE_KITCHEN_KNIFE);

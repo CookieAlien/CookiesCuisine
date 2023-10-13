@@ -29,5 +29,8 @@
   "item.cookiescuisine.iron_kitchen_knife": "鐵廚刀",
   "item.cookiescuisine.golden_kitchen_knife": "黃金廚刀",
   "item.cookiescuisine.diamond_kitchen_knife": "鑽石廚刀",
-  "item.cookiescuisine.netherite_kitchen_knife": "獄髓廚刀"
+  "item.cookiescuisine.netherite_kitchen_knife": "獄髓廚刀",
+  "item.cookiescuisine.onigiri": "日式飯糰",
+  "item.cookiescuisine.bento": "便當",
+  "item.cookiescuisine.bento_box": "便當盒"
 }

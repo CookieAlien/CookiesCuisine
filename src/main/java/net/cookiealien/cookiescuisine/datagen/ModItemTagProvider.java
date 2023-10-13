@@ -26,5 +26,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                         ModItems.GOLDEN_KITCHEN_KNIFE.get(),
                         ModItems.DIAMOND_KITCHEN_KNIFE.get(),
                         ModItems.NETHERITE_KITCHEN_KNIFE.get());
+        this.tag(ModTags.Items.VEGETABLES)
+                .add(ModItems.CABBAGE.get());
     }
 }
