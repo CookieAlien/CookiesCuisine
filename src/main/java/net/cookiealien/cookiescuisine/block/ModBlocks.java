@@ -23,6 +23,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SALT_BLOCK = registerBlock("salt_block",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).mapColor(MapColor.SAND).sound(SoundType.SAND)));
+    public static final RegistryObject<Block> GRILL_STATION = registerBlock("grill_station",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> RICE_CROP = BLOCKS.register("rice_crop",
                 ()-> new RiceCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
     public static final RegistryObject<Block> CABBAGE_CROP = BLOCKS.register("cabbage_crop",

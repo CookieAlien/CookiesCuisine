@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -21,6 +22,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.SALT_BLOCK);
+        simpleBlockWithItem(ModBlocks.GRILL_STATION.get(), new ModelFile.UncheckedModelFile(modLoc("block/grill_station")));
         cropBlock(ModBlocks.RICE_CROP.get(),"rice", RiceCropBlock.AGE);
         cropCrossBlock(ModBlocks.CABBAGE_CROP.get(),"cabbage", CabbageCropBlock.AGE);
     }
