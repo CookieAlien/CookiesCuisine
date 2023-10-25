@@ -23,6 +23,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.SALT_BLOCK);
         simpleBlockWithItem(ModBlocks.GRILL_STATION.get(), new ModelFile.UncheckedModelFile(modLoc("block/grill_station")));
+        horizontalBlock(ModBlocks.WATER_BOILER.get(), new ModelFile.UncheckedModelFile(modLoc("block/water_boiler")));
+        simpleBlockItem(ModBlocks.WATER_BOILER.get(), new ModelFile.UncheckedModelFile(modLoc("block/water_boiler")));
         cropBlock(ModBlocks.RICE_CROP.get(),"rice", RiceCropBlock.AGE);
         cropCrossBlock(ModBlocks.CABBAGE_CROP.get(),"cabbage", CabbageCropBlock.AGE);
     }

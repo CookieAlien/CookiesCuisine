@@ -1,8 +1,9 @@
-// 1.20.1	2023-10-20T14:16:14.397736	Block States: cookiescuisine
+// 1.20.1	2023-10-25T14:54:13.341979	Block States: cookiescuisine
 63a89a5db6cdedf43683d7c3da07782c34605de3 assets/cookiescuisine/blockstates/cabbage_crop.json
 b6f369870a244e486dff65575fa1b9c2e16e4b6f assets/cookiescuisine/blockstates/grill_station.json
 ce29e6482a1107eef9acf102e16e37633167589c assets/cookiescuisine/blockstates/rice_crop.json
 00145f0ac0f1f6591ec4d59da0ddb3c067385c92 assets/cookiescuisine/blockstates/salt_block.json
+684a85a2e17b6ce1341192d7e1f190e33dca3216 assets/cookiescuisine/blockstates/water_boiler.json
 7417d29633e40744e83f297accd4f679100815ac assets/cookiescuisine/models/block/cabbage_stage0.json
 13d29dc6e15bc666eb4cb311eb5c12d398bdc3c5 assets/cookiescuisine/models/block/cabbage_stage1.json
 ded79b71484e55da8bb6e346dbbacfc2ce9fb245 assets/cookiescuisine/models/block/cabbage_stage2.json
@@ -17,3 +18,4 @@ eb41d1cf41ffb312f6d104db54b8b27d33cabc5a assets/cookiescuisine/models/block/rice
 22b4d86cb1cf57aa6d778fd453bd6285bd76b1ec assets/cookiescuisine/models/block/salt_block.json
 52638abd4906cc792573558380c47c2441834d4d assets/cookiescuisine/models/item/grill_station.json
 6f54c6e3f9d724e184121810b22a52e348d8372e assets/cookiescuisine/models/item/salt_block.json
+73fe1f4481030647f6745038db82e9d2fad422dc assets/cookiescuisine/models/item/water_boiler.json

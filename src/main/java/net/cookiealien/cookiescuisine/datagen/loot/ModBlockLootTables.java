@@ -28,6 +28,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.SALT_BLOCK.get(),
                 block -> createSaltDrops(ModBlocks.SALT_BLOCK.get()));
         this.dropSelf(ModBlocks.GRILL_STATION.get());
+        this.dropSelf(ModBlocks.WATER_BOILER.get());
 
         LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.RICE_CROP.get())

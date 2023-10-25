@@ -3,6 +3,7 @@ package net.cookiealien.cookiescuisine.block;
 import net.cookiealien.cookiescuisine.CookiesCuisine;
 import net.cookiealien.cookiescuisine.block.custom.CabbageCropBlock;
 import net.cookiealien.cookiescuisine.block.custom.RiceCropBlock;
+import net.cookiealien.cookiescuisine.block.custom.WaterBoilerBlock;
 import net.cookiealien.cookiescuisine.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -25,6 +26,8 @@ public class ModBlocks {
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.CLAY).mapColor(MapColor.SAND).sound(SoundType.SAND)));
     public static final RegistryObject<Block> GRILL_STATION = registerBlock("grill_station",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> WATER_BOILER = registerBlock("water_boiler",
+            ()-> new WaterBoilerBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion()));
     public static final RegistryObject<Block> RICE_CROP = BLOCKS.register("rice_crop",
                 ()-> new RiceCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
     public static final RegistryObject<Block> CABBAGE_CROP = BLOCKS.register("cabbage_crop",
