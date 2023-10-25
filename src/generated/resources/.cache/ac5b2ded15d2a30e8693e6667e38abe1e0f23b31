@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-13T10:18:49.6683242	Item Models: cookiescuisine
+// 1.20.1	2023-10-25T11:07:50.0652461	Item Models: cookiescuisine
 0cb1f850d84588b4a452720dcbf57c7edc75700b assets/cookiescuisine/models/item/apple_juice.json
 3e85e6280e5ad35e1d62044e7e0550be491a62bb assets/cookiescuisine/models/item/bento.json
 e3813a6f747710c8cf5076305f856fc815f67478 assets/cookiescuisine/models/item/bento_box.json
@@ -13,13 +13,16 @@ df17a771b36e4d57103bf4d19b24dfda486a7698 assets/cookiescuisine/models/item/chick
 1c475a7ad374224be9655f3174728166d2f98147 assets/cookiescuisine/models/item/golden_kitchen_knife.json
 94e13ff46df2a31ed3e27cbfffe5660716e68090 assets/cookiescuisine/models/item/green_apple.json
 ba289a757b5605759be2f25acfa54989b32f2e20 assets/cookiescuisine/models/item/green_apple_juice.json
+20f8e3303dc27c4c05f2a13b1409225773c9cefd assets/cookiescuisine/models/item/instant_noodles.json
 49888e06b78b1b267929cecad473efe25f01c7b2 assets/cookiescuisine/models/item/iron_kitchen_knife.json
 b0bbc43b9321a3a9523aa7846712bc606e1c484c assets/cookiescuisine/models/item/juicer.json
 4e4a97d7e0bd0fb368083d91d0a042efb7f65893 assets/cookiescuisine/models/item/mortar.json
 11d138e3397421bc7fb4cf43c279b198ee21b373 assets/cookiescuisine/models/item/netherite_kitchen_knife.json
+dfdc798c92c6b3367ba7be61c4204323c5fcc8c1 assets/cookiescuisine/models/item/noodles_cup.json
 c1014f566aee6fd6110996f80af93a08a8ef2202 assets/cookiescuisine/models/item/onigiri.json
 c5fd0805c25619f11697fbcd2ea64bc3480e908e assets/cookiescuisine/models/item/paper_cup.json
 55bd69065cd199c5d27b7ae895c9e0a1cf438f43 assets/cookiescuisine/models/item/raw_chicken_cutlet.json
+78664f32cd400b208e00befa5ffaad423cfe1b3e assets/cookiescuisine/models/item/raw_noodles.json
 bfb34ddeb6632b78b3c972c58ab71a324a5383c7 assets/cookiescuisine/models/item/raw_water.json
 f496d21d453d50cd62b5ae8143df519918038877 assets/cookiescuisine/models/item/rice.json
 9023d8da818fadf926be94e699cbe311c15b8713 assets/cookiescuisine/models/item/rice_panicle.json
@@ -31,3 +34,4 @@ a7cb0c3a09d251091e93d20235a3db377c8365bd assets/cookiescuisine/models/item/shred
 1f9118bb944ce0803a3bb255cc706e3ef254fe7b assets/cookiescuisine/models/item/sweet_berry_juice.json
 87c033d43adc68d3e007918784b031230d461ea8 assets/cookiescuisine/models/item/sweet_cookie.json
 227188de8d798cdc4aac7bce0a1d17664a2ad51a assets/cookiescuisine/models/item/watermelon_juice.json
+7580e47731ea6ca0e7d4b64d3662354be082f4e8 assets/cookiescuisine/models/item/water_cup.json

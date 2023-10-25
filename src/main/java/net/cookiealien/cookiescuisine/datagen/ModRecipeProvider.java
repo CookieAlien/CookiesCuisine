@@ -90,7 +90,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.FLOUR.get()),has(ModItems.FLOUR.get()))
                 .save(pWriter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.DOUGH.get(),4)
-                .requires(Items.WATER_BUCKET)
+                .requires(ModTags.Items.WATER_HOLDERS)
                 .requires(ModItems.FLOUR.get(),4)
                 .unlockedBy(getHasName(ModItems.DOUGH.get()),has(ModItems.DOUGH.get()))
                 .save(pWriter);
@@ -98,12 +98,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Items.WATER_BUCKET)
                 .unlockedBy(getHasName(ModItems.RAW_WATER.get()),has(ModItems.RAW_WATER.get()))
                 .save(pWriter);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.DOUGH.get(),4)
-                .requires(ModItems.RAW_WATER.get())
-                .requires(ModItems.FLOUR.get(),4)
-                .unlockedBy(getHasName(ModItems.DOUGH.get()),has(ModItems.DOUGH.get()))
-                .save(pWriter,new ResourceLocation(CookiesCuisine.MODID, "flour_from_raw_water"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.RICE_SEEDS.get())
                 .requires(ModItems.RICE_PANICLE.get())
@@ -139,7 +133,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModTags.Items.BENTO_SIDES)
                 .unlockedBy(getHasName(ModItems.RICE.get()),has(ModItems.RICE.get()))
                 .save(pWriter);
-
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD,ModItems.RAW_NOODLES.get())
+                .requires(ModItems.DOUGH.get())
+                .requires(ModTags.Items.KITCHEN_KNIVES)
+                .unlockedBy(getHasName(ModItems.DOUGH.get()),has(ModItems.DOUGH.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD,ModItems.NOODLES_CUP.get())
+                .requires(ModItems.PAPER_CUP.get())
+                .requires(ModItems.RAW_NOODLES.get())
+                .unlockedBy(getHasName(ModItems.RAW_NOODLES.get()),has(ModItems.RAW_NOODLES.get()))
+                .save(pWriter);
 
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(ModItems.RAW_WATER.get()),RecipeCategory.FOOD,ModItems.SALT.get(), 0.35F,200)

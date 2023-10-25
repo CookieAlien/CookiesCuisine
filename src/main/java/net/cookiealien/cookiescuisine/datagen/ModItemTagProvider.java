@@ -44,5 +44,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.BAKED_POTATO)
                 .add(Items.CARROT)
                 .add(ModItems.BOILED_EGG.get());
+        this.tag(ModTags.Items.WATER_HOLDERS)
+                .add(Items.WATER_BUCKET)
+                .add(ModItems.RAW_WATER.get())
+                .add(ModItems.WATER_CUP.get());
     }
 }

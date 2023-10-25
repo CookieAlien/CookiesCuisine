@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cookiescuisine:paper_cup"
+    },
+    {
+      "item": "cookiescuisine:raw_noodles"
+    }
+  ],
+  "result": {
+    "item": "cookiescuisine:noodles_cup"
+  }
+}

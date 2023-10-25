@@ -1,5 +1,7 @@
 package net.cookiealien.cookiescuisine.item.custom;
 
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
 public class ModFoods {
@@ -17,4 +19,6 @@ public class ModFoods {
     public static final FoodProperties CABBAGE = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.2F).build();
     public static final FoodProperties SHRED_CHICKEN_RICE = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.4F).build();
     public static final FoodProperties BENTO = (new FoodProperties.Builder()).nutrition(8).saturationMod(0.8F).build();
+    public static final FoodProperties INSTANT_NOODLES = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.3F).build();
+    public static final FoodProperties RAW_NOODLES = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.2F).effect(()->new MobEffectInstance(MobEffects.HUNGER,300),0.6F).build();
 }

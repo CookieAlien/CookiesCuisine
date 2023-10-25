@@ -44,6 +44,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ONIGIRI);
         simpleItem(ModItems.BENTO_BOX);
         simpleItem(ModItems.BENTO);
+        simpleItem(ModItems.WATER_CUP);
+        simpleItem(ModItems.NOODLES_CUP);
+        simpleItem(ModItems.INSTANT_NOODLES);
+        simpleItem(ModItems.RAW_NOODLES);
 
 
         heldItem(ModItems.STONE_KITCHEN_KNIFE);

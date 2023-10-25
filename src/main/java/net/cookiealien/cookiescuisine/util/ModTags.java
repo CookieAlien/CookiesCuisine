@@ -25,6 +25,7 @@ public class ModTags {
         public static final TagKey<Item> KITCHEN_KNIVES = tag("kitchen_knives");
         public static final TagKey<Item> BENTO_MAIN_DISHES = tag("bento_main_dishes");
         public static final TagKey<Item> BENTO_SIDES = tag("bento_sides");
+        public static final TagKey<Item> WATER_HOLDERS = tag("water_holders");
         private static TagKey<Item> tag(String name){
             return ItemTags.create(new ResourceLocation(CookiesCuisine.MODID,name));
         }

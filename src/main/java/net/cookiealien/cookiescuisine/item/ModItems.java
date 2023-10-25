@@ -26,9 +26,13 @@ public class ModItems {
     public static final RegistryObject<Item> WATERMELON_JUICE = ITEMS.register("watermelon_juice", ()-> new JuiceCupItem(new Item.Properties().food(ModFoods.WATERMELON_JUICE)));
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DOUGH = ITEMS.register("dough", ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_NOODLES = ITEMS.register("raw_noodles", ()-> new Item(new Item.Properties().food(ModFoods.RAW_NOODLES)));
+    public static final RegistryObject<Item> NOODLES_CUP = ITEMS.register("noodles_cup", ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> INSTANT_NOODLES = ITEMS.register("instant_noodles", ()-> new InstantNoodlesItem(new Item.Properties().food(ModFoods.INSTANT_NOODLES)));
     public static final RegistryObject<Item> RAW_WATER = ITEMS.register("raw_water", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SALT = ITEMS.register("salt", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PAPER_CUP = ITEMS.register("paper_cup", ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> WATER_CUP = ITEMS.register("water_cup", ()-> new JuiceCupItem(new Item.Properties().craftRemainder(ModItems.PAPER_CUP.get())));
     public static final RegistryObject<Item> BENTO_BOX = ITEMS.register("bento_box", ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BENTO = ITEMS.register("bento", ()-> new BentoItem(new Item.Properties().food(ModFoods.BENTO)));
     public static final RegistryObject<Item> RICE_SEEDS = ITEMS.register("rice_seeds", ()-> new ItemNameBlockItem(ModBlocks.RICE_CROP.get(), new Item.Properties()));

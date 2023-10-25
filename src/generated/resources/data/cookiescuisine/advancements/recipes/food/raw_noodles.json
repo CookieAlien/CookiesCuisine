@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cookiescuisine:flour_from_raw_water"
+        "recipe": "cookiescuisine:raw_noodles"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "cookiescuisine:flour_from_raw_water"
+      "cookiescuisine:raw_noodles"
     ]
   },
   "sends_telemetry_event": false
