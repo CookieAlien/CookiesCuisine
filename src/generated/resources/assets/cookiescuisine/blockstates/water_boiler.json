@@ -1,17 +1,122 @@
 {
   "variants": {
-    "facing=east": {
+    "facing=east,heated=false,water_level=0": {
       "model": "cookiescuisine:block/water_boiler",
       "y": 90
     },
-    "facing=north": {
+    "facing=east,heated=false,water_level=1": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 90
+    },
+    "facing=east,heated=false,water_level=2": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 90
+    },
+    "facing=east,heated=false,water_level=3": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 90
+    },
+    "facing=east,heated=true,water_level=0": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 90
+    },
+    "facing=east,heated=true,water_level=1": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 90
+    },
+    "facing=east,heated=true,water_level=2": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 90
+    },
+    "facing=east,heated=true,water_level=3": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 90
+    },
+    "facing=north,heated=false,water_level=0": {
       "model": "cookiescuisine:block/water_boiler"
     },
-    "facing=south": {
+    "facing=north,heated=false,water_level=1": {
+      "model": "cookiescuisine:block/water_boiler"
+    },
+    "facing=north,heated=false,water_level=2": {
+      "model": "cookiescuisine:block/water_boiler"
+    },
+    "facing=north,heated=false,water_level=3": {
+      "model": "cookiescuisine:block/water_boiler"
+    },
+    "facing=north,heated=true,water_level=0": {
+      "model": "cookiescuisine:block/water_boiler"
+    },
+    "facing=north,heated=true,water_level=1": {
+      "model": "cookiescuisine:block/water_boiler"
+    },
+    "facing=north,heated=true,water_level=2": {
+      "model": "cookiescuisine:block/water_boiler"
+    },
+    "facing=north,heated=true,water_level=3": {
+      "model": "cookiescuisine:block/water_boiler"
+    },
+    "facing=south,heated=false,water_level=0": {
       "model": "cookiescuisine:block/water_boiler",
       "y": 180
     },
-    "facing=west": {
+    "facing=south,heated=false,water_level=1": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 180
+    },
+    "facing=south,heated=false,water_level=2": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 180
+    },
+    "facing=south,heated=false,water_level=3": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 180
+    },
+    "facing=south,heated=true,water_level=0": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 180
+    },
+    "facing=south,heated=true,water_level=1": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 180
+    },
+    "facing=south,heated=true,water_level=2": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 180
+    },
+    "facing=south,heated=true,water_level=3": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 180
+    },
+    "facing=west,heated=false,water_level=0": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 270
+    },
+    "facing=west,heated=false,water_level=1": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 270
+    },
+    "facing=west,heated=false,water_level=2": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 270
+    },
+    "facing=west,heated=false,water_level=3": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 270
+    },
+    "facing=west,heated=true,water_level=0": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 270
+    },
+    "facing=west,heated=true,water_level=1": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 270
+    },
+    "facing=west,heated=true,water_level=2": {
+      "model": "cookiescuisine:block/water_boiler",
+      "y": 270
+    },
+    "facing=west,heated=true,water_level=3": {
       "model": "cookiescuisine:block/water_boiler",
       "y": 270
     }

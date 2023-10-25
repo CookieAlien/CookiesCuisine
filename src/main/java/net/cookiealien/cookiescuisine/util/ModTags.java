@@ -1,7 +1,6 @@
 package net.cookiealien.cookiescuisine.util;
 
 import net.cookiealien.cookiescuisine.CookiesCuisine;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -11,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks{
+        public static final TagKey<Block> HEAT_SOURCES = tag("heat_sources");
         private static TagKey<Block> tag(String name){
             return BlockTags.create(new ResourceLocation(CookiesCuisine.MODID,name));
         }
